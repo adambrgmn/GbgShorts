@@ -1,0 +1,27 @@
+{
+  "name": "gbgshorts",
+  "version": "0.0.0",
+  "description": "Main webpage of independent film festival Gbg Shorts",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "node bin/build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adambrgmn/gbgshorts.git"
+  },
+  "author": "Adam Bergman <adam@fransvilhelm.com> (http://fransvilhelm.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adambrgmn/gbgshorts/issues"
+  },
+  "homepage": "https://github.com/adambrgmn/gbgshorts#readme",
+  "dependencies": {
+    "bluebird": "^3.4.6",
+    "clean-css": "^3.4.20",
+    "del": "^2.2.2",
+    "dotenv": "^2.0.0",
+    "html-minifier": "^3.1.0",
+    "uglify-js": "^2.7.3"
+  }
+}
