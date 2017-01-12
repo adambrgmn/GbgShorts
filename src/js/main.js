@@ -1,14 +1,14 @@
-var $container = document.querySelector('.container');
-var $title = document.querySelector('.title');
+const $container = document.querySelector('.container');
+const $title = document.querySelector('.title');
 
-function toggleContainerClass() {
+const toggleContainerClass = () => {
   $container.classList.toggle('hover');
 };
 
 $title.addEventListener('mouseover', toggleContainerClass);
 $title.addEventListener('mouseout', toggleContainerClass);
 
-setInterval(function () {
+setInterval(() => {
   toggleContainerClass();
   setTimeout(toggleContainerClass, 500);
 }, 10000);
