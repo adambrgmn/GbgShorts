@@ -1,3 +1,7 @@
+build
+tmp
+.env
+
 # Logs
 logs
 *.log
