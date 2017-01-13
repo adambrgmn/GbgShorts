@@ -15,6 +15,12 @@ injectGlobal`
   }
 `;
 
+const Background = styled.div`
+  width: 100%;
+  background: url('static/pattern.png');
+  background-size: 7rem;
+`;
+
 const Container = styled.div`
   width: 100%;
   max-width: ${({ maxWidth }) => `${maxWidth}px`};
@@ -23,9 +29,11 @@ const Container = styled.div`
 `;
 
 export default () => (
-  <Container maxWidth="375">
-    <Tilt>
-      <Header />
-    </Tilt>
-  </Container>
+  <Background>
+    <Container maxWidth="375">
+      <Tilt>
+        <Header />
+      </Tilt>
+    </Container>
+  </Background>
 );
