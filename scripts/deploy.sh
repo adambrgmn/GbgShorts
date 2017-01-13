@@ -19,5 +19,10 @@ echo "Deploying from branch ${BRANCH}"
 echo "with NODE_ENV=${NODE_ENV}"
 now -e NODE_ENV=${NODE_ENV} -t ${NOW_TOKEN} -C -f
 
-echo "Setting alias for deployment to ${ALIAS}"
-now alias set $(get_id) ${ALIAS} -t ${NOW_TOKEN}
+ID=$(get_id)
+echo "Setting alias for deployment id ${ID} to ${ALIAS}"
+now alias set ${ID} ${ALIAS} -t ${NOW_TOKEN}
+
+if [[ $BRANCH == 'master' ]]; then
+  now alias set ${ID} www.${ALIAS} -t ${NOW_TOKEN}
+fi
