@@ -1,13 +1,14 @@
 #!/bin/bash
 set -e
 
-function get_id {
-  now ls onsdagsmassan -t ${NOW_TOKEN} | sed -n 5p | awk '{ print $1 }'
-}
-
 BRANCH=${TRAVIS_BRANCH:-$(git rev-parse --abbrev-ref HEAD)}
 NODE_ENV="development"
 ALIAS=${ALIAS_DEVELOPMENT}
+APP="gbgshorts"
+
+function get_id {
+  now ls ${APP} -t ${NOW_TOKEN} | sed -n 5p | awk '{ print $1 }'
+}
 
 if [[ $BRANCH == 'master' ]]; then
   NODE_ENV="production"
