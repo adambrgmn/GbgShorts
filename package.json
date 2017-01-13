@@ -1,6 +1,6 @@
 {
   "name": "gbgshorts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Main webpage of independent film festival Gbg Shorts",
   "scripts": {
     "dev": "next",
