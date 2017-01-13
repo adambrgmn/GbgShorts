@@ -1,15 +1,6 @@
 {
-  "presets": [
-    "latest"
-  ],
+  "presets": ["next/babel"],
   "plugins": [
-    "transform-class-properties",
-    "transform-object-rest-spread",
-    ["transform-regenerator", { "async": false }],
-    ["transform-runtime", {
-      "helpers": false,
-      "polyfill": false,
-      "regenerator": true
-    }],
+    "transform-flow-strip-types"
   ]
 }
