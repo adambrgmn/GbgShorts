@@ -18,7 +18,7 @@ injectGlobal`
 const Background = styled.div`
   width: 100%;
   background: url('static/pattern.png');
-  background-size: 7rem;
+  background-size: 15rem;
 `;
 
 const Container = styled.div`
