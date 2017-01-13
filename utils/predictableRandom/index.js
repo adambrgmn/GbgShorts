@@ -2,7 +2,7 @@
 import R from 'ramda';
 import seedRandom from 'seedrandom';
 
-const seed = seedRandom('a.');
+const seed = seedRandom('c.');
 const constructArray = R.compose(R.map(seed), R.range(0), R.add(1));
 
 export default (totalNums: number): () => number => {

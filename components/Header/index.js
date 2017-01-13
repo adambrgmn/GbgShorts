@@ -17,11 +17,11 @@ const HeaderContainer = styled.header`
 const H1 = styled.h1`
   display: block;
   margin: 0;
-  padding: 0 0 3rem 0;
+  padding: 0 0 4rem 0;
   font-family: 'Gill Sans';
-  font-size: 3rem;
+  font-size: 6rem;
   font-weight: 700;
-  line-height: 3;
+  line-height: 1;
   text-transform: uppercase;
 `;
 
@@ -47,7 +47,7 @@ export default class Header extends React.Component {
     return (
       <HeaderContainer>
         <Tilt>
-          <H1>{spanEach('Gbg')}<br />{spanEach('Shorts')}</H1>
+          <H1>{spanEach('Gbg Shorts')}</H1>
           <H1>{spanEach('22 april')}</H1>
         </Tilt>
       </HeaderContainer>
