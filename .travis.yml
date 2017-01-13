@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+- '7'
+cache: yarn
+before_script: npm install -g now
+script: npm run deploy
+branches:
+  only:
+  - master
+  - develop
+env:
+- ALIAS_DEVELOPMENT=beta.gbgshorts.se ALIAS_PRODUCTION=gbgshorts.se
+notifications:
+  email: false
+  slack:
+    secure: faC0IpHMXTHhTMSwCvBRppvMWJYjqigSYQ2217dZAyp36cNRmsZ193a4Ayt5eSMAra696Yxtt+FriJjW7F2/p9cx496j72IKzehsM8xcfhQurD5kx2vPrXlvncP8Is+4qwnEwWBOw3nt/4TPAmiB8gOsGkW3BtF/0mekHfRBu3DP7mdUTBevKLUCdTi6/aUVLTEASja56LyGbGD0giMxzPNK/8EUgIBQtIEFA77bM5pwBMPoeN4oflj9wS5/7FYf2sJyKI2DLIdzorCbFmWigTI8B0ZqsByYmdp8tTcSmgMjNoAsFJiLQUyihAPtKt77dxDSZ1hWfR3DY+FsvQ/9BRIBd/sO45IQRfSnydzaYJ2ZDTw7r38AWe4q/IeXFvzmklkU8peG+daQ974/XhxEcMdaC63QUR1Ry/AhvhXCNbdoKMCMpVNnKEwj2TVzUjToArfrBqPJOnGl5u8x4HdNE6zwN66Re4w7OuBf2MFvR2plmosZ3tYITekFQYod9Eo1adNuIkEfzmECt+z/ag20AJNl1tJKHDmxPTtC/pVBHwEPsA4qkYnWbwMR2Y1KHnJTL7miYwcMnwZg3qtQ/uQOyZgqNt+2hm9pcDaDp1RTAd+/iIC4BYOP4huPsCcjcPWx1ETfW8a8eTMqBWFaqWydyqr2NAKUyXcSxj9iSfWMuM8=
