@@ -5,5 +5,5 @@ export default styled.div`
   min-height: 100vh;
   padding: 0 0 5rem 0;
   margin: 0;
-  background-color: ${({ bg }) => bg};
+  background: ${({ bg }) => bg};
 `;

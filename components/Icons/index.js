@@ -1,4 +1,5 @@
 import React, { PropTypes } from 'react';
+import styled from 'styled-components';
 
 export function LogotypeCurly({ className }) {
   return (
@@ -18,3 +19,26 @@ export function LogotypeCurly({ className }) {
 
 LogotypeCurly.propTypes = { className: PropTypes.string };
 LogotypeCurly.defaultProps = { className: '' };
+
+const SlantedRect = styled.rect`
+  transform-origin: top;
+  transform: rotate(-60deg);
+`;
+
+export function CheckYear({ className }) {
+  return (
+    <svg viewBox="0 0 550 360" className={className} style={{ marginBottom: '-0.25rem' }}>
+      <rect width="550" height="360" />
+      {/* <SlantedRect x="215" y="55" width="20" height="250" transform="translate(-43.38 284.86) rotate(-60)" fill="#fff" /> */}
+      <SlantedRect x="111" y="126" width="20" height="250" fill="#fff" />
+      <rect x="140" y="70" width="20" height="220" fill="#fff" />
+      <rect x="190" y="70" width="20" height="220" fill="#fff" />
+      <rect x="240" y="70" width="20" height="220" fill="#fff" />
+      <rect x="290" y="70" width="20" height="220" fill="#fff" />
+      <rect x="390" y="70" width="20" height="220" fill="#fff" />
+    </svg>
+  );
+}
+
+CheckYear.propTypes = { className: PropTypes.string };
+CheckYear.defaultProps = { className: '' };

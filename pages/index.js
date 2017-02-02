@@ -4,6 +4,7 @@ import Container from '../components/Container';
 import Header from '../components/Header';
 import { Grid, GridColumn } from '../components/Grid';
 import WelcomeSection from '../components/WelcomeSection';
+import { CheckYear } from '../components/Icons';
 import Img from '../components/Img';
 
 
@@ -37,9 +38,10 @@ export default class Index extends Component {
             <GridColumn key={n == null ? 'text' : n + i}>
               {i === 2
                 ? <WelcomeSection />
+                : i === 4
+                  ? <CheckYear />
                 : <Img src={this.cloudinarySrc(n)} />
               }
-
             </GridColumn>
           ))}
         </Grid>
