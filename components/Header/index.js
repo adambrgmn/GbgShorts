@@ -1,5 +1,6 @@
 import React, { PropTypes } from 'react';
 import styled from 'styled-components';
+import Head from 'next/head';
 import Router from 'next/router';
 import NProgress from 'nprogress';
 
@@ -35,14 +36,17 @@ Router.onRouteChangeStart = () => NProgress.start();
 Router.onRouteChangeComplete = () => NProgress.done();
 Router.onRouteChangeError = () => NProgress.done();
 
-export default function Header({ pathname }) {
+export default function Header({ pathname, title }) {
   return (
     <Container>
+      <Head>
+        <title>{title && `${title} - `}Gbg Shorts | 27 april 2017 hos Hey It&apos;s Enrico Pallazzo</title>
+      </Head>
       <Title>Gbg Shorts</Title>
       <Navigation pathname={pathname} />
     </Container>
   );
 }
 
-Header.defaultProps = { pathname: '/' };
-Header.propTypes = { pathname: PropTypes.string };
+Header.defaultProps = { pathname: '/', title: '' };
+Header.propTypes = { pathname: PropTypes.string, title: PropTypes.string };

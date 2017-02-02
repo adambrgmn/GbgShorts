@@ -30,9 +30,9 @@ export default class MyDocument extends Document {
       <html lang="sv-SE">
         <Head>
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-          <title>Gbg Shorts | 27 april 2017 | Pallazzot</title>
+          <title>Gbg Shorts | 27 april 2017 hos Hey It&apos;s Enrico Pallazzo</title>
 
-          <meta name="description" content="Gbg Shorts | 27 april 2017 | Pallazzot" />
+          <meta name="description" content="Kortfilmsfestivalen Gbg Shorts anordnas i år för 6 gången hos Hey I&apos;ts Enrico Pallazo vid Röda Sten i Göteborg" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
 
           <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Lato:400,400i,700,700i" rel="stylesheet" />
