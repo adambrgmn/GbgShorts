@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import styled, { css } from 'styled-components';
+import Link from '../Link';
 
 import { media } from '../../style/utils';
 
@@ -81,7 +82,7 @@ const Nav = styled.nav`
     ? '2rem'
     : '0.2rem 1rem 0.2rem 1rem'
   )};
-  background-color: #ffffff;
+  background-color: ${({ open }) => (open ? '#ffffff' : 'transparent')};
   pointer-events: ${({ open }) => (open ? 'auto' : 'none')};
   transition: all ${() => transitionDur}s ease-in-out;
   z-index: 1;
@@ -98,7 +99,7 @@ const Nav = styled.nav`
   `}
 `;
 
-const NavItem = styled.a`
+const NavItem = styled(Link)`
   position: relative;
   display: inline-block;
   margin-top: ${({ open }) => (open ? 1 : 0.3)}rem;
@@ -186,8 +187,8 @@ export default class Navigation extends Component {
         <Nav open={open}>
           {navItems.map((item, i) => (
             <NavItem
-              key={item.title}
               href={item.href}
+              key={item.title}
               index={i}
               open={open}
               active={item.href === pathname}
