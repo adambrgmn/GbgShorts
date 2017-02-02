@@ -2,13 +2,13 @@
   "name": "gbgshorts",
   "version": "0.0.0",
   "description": "Homepage for independent short film festival GBG SHORTS",
+  "homepage": "https://gbgshorts.se"
   "scripts": {
     "dev": "next",
     "start": "next start",
     "build": "next build",
     "deploy": "./scripts/deploy.sh"
   },
-  "main": "index.js",
   "repository": "git@github.com:adambrgmn/gbgshorts.git",
   "author": "Adam Bergman <adam@fransvilhelm.com>",
   "license": "MIT",
