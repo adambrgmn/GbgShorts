@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next",
     "start": "next start",
-    "build": "next build"
+    "build": "next build",
+    "deploy": "./scripts/deploy.sh"
   },
   "main": "index.js",
   "repository": "git@github.com:adambrgmn/gbgshorts.git",
@@ -13,6 +14,7 @@
   "license": "MIT",
   "dependencies": {
     "next": "beta",
+    "nprogress": "^0.2.0",
     "ramda": "^0.23.0",
     "react": "^15.4.2",
     "styled-components": "^1.4.2"
