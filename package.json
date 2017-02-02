@@ -1,0 +1,28 @@
+{
+  "name": "gbgshorts",
+  "version": "0.0.0",
+  "description": "Homepage for independent short film festival GBG SHORTS",
+  "scripts": {
+    "dev": "next",
+    "start": "next start",
+    "build": "next build"
+  },
+  "main": "index.js",
+  "repository": "git@github.com:adambrgmn/gbgshorts.git",
+  "author": "Adam Bergman <adam@fransvilhelm.com>",
+  "license": "MIT",
+  "dependencies": {
+    "next": "beta",
+    "ramda": "^0.23.0",
+    "react": "^15.4.2",
+    "styled-components": "^1.4.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "eslint": "^3.14.1",
+    "eslint-config-airbnb": "^14.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^3.0.2",
+    "eslint-plugin-react": "^6.9.0"
+  }
+}
