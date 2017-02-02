@@ -1,5 +1,7 @@
 import React, { PropTypes } from 'react';
 import styled from 'styled-components';
+import Router from 'next/router';
+import NProgress from 'nprogress';
 
 import { media } from '../../style/utils';
 import Navigation from '../Navigation';
@@ -28,6 +30,10 @@ const Title = styled.h1`
   letter-spacing: 3px;
   z-index: 2;
 `;
+
+Router.onRouteChangeStart = () => NProgress.start();
+Router.onRouteChangeComplete = () => NProgress.done();
+Router.onRouteChangeError = () => NProgress.done();
 
 export default function Header({ pathname }) {
   return (
