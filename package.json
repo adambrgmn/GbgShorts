@@ -13,6 +13,7 @@
   "author": "Adam Bergman <adam@fransvilhelm.com>",
   "license": "MIT",
   "dependencies": {
+    "firebase": "^3.6.10",
     "next": "beta",
     "nprogress": "^0.2.0",
     "ramda": "^0.23.0",

@@ -1,6 +1,8 @@
 import React, { Component, PropTypes } from 'react';
 import styled from 'styled-components';
 
+import getPage from '../lib/getPage';
+
 import Header from '../components/Header';
 import Container from '../components/Container';
 import { Content, Items } from '../components/Content';
@@ -30,17 +32,19 @@ const Imgs = styled(Img)`
   &:nth-child(3) { margin-top: -60%; margin-left: 30%; width: 70%; }
 `;
 
-const Text = styled.p`
-  font-family: Gill Sans, Lato, sans-serif;
-  margin-bottom: 1rem;
-  padding: 0 1.5rem;
+const TextContent = styled.div`
+  & p {
+    font-family: Gill Sans, Lato, sans-serif;
+    margin-bottom: 1rem;
+    padding: 0 1.5rem;
 
-  &:last-child { margin-bottom: 0; padding-bottom: 1rem; }
+    &:last-child { margin-bottom: 0; padding-bottom: 1rem; }
 
-  ${media.large`
-    padding: 0;
-    &:first-child { padding-top: 5rem; }
-  `}
+    ${media.large`
+      padding: 0;
+      &:first-child { padding-top: 5rem; }
+    `}
+  }
 `;
 
 export default class Information extends Component {
@@ -48,17 +52,21 @@ export default class Information extends Component {
     url: PropTypes.shape({
       pathname: PropTypes.string,
     }).isRequired,
+    data: PropTypes.shape({
+      html: PropTypes.string,
+    }).isRequired,
   }
 
   static async getInitialProps() {
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    return {};
+    const data = await getPage('information');
+    return { data };
   }
 
   render() {
+    const { url, data } = this.props;
     return (
       <Container bg="#dcddde">
-        <Header pathname={this.props.url.pathname} title="Information" />
+        <Header pathname={url.pathname} title="Information" />
         <Content>
           <Items order="3" basis="70">
             <LogotypeCurly />
@@ -71,9 +79,7 @@ export default class Information extends Component {
             </ImgContainer>
           </Items>
           <Items order="2">
-            <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quodsi ipsam honestatem undique pertectam atque absolutam. Illud dico, ea, quae dicat, praeclare inter se cohaerere. Nihil opus est exemplis hoc facere longius. Traditur, inquit, ab Epicuro ratio neglegendi doloris. Quamquam ab iis philosophiam et omnes ingenuas disciplinas habemus; Erat enim Polemonis. Duo Reges: constructio interrete. Tum ille: Tu autem cum ipse tantum librorum habeas, quos hic tandem requiris? Collige omnia, quae soletis: Praesidium amicorum. Praeclare enim Plato: Beatum, cui etiam in senectute contigerit, ut sapientiam verasque opiniones assequi possit. Hanc quoque iucunditatem, si vis, transfer in animum; </Text>
-            <Text>Et non ex maxima parte de tota iudicabis? Quae quo sunt excelsiores, eo dant clariora indicia naturae. Vitiosum est enim in dividendo partem in genere numerare. Non est igitur voluptas bonum. Nos quidem Virtutes sic natae sumus, ut tibi serviremus, aliud negotii nihil habemus. Primum Theophrasti, Strato, physicum se voluit; </Text>
-            <Text>Sed finge non solum callidum eum, qui aliquid improbe faciat, verum etiam praepotentem, ut M. Mihi quidem Antiochum, quem audis, satis belle videris attendere. Sin autem eos non probabat, quid attinuit cum iis, quibuscum re concinebat, verbis discrepare? Utilitatis causa amicitia est quaesita. </Text>
+            <TextContent dangerouslySetInnerHTML={{ __html: data.html }} />
           </Items>
         </Content>
       </Container>
