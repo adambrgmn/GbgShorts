@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Head from 'next/head';
 import Router from 'next/router';
 import NProgress from 'nprogress';
+import { trackPageView, trackError, GaTiming } from '../../lib/ga';
 
 import { media } from '../../style/utils';
 import Navigation from '../Navigation';
@@ -38,9 +39,31 @@ const Title = styled.h1`
   }
 `;
 
-Router.onRouteChangeStart = () => NProgress.start();
-Router.onRouteChangeComplete = () => NProgress.done();
-Router.onRouteChangeError = () => NProgress.done();
+
+// trackError
+// GaTiming
+
+const measureTime = new GaTiming({ category: 'Page transitions', variable: 'load' });
+
+function onRouteChangeStart() {
+  NProgress.start();
+  measureTime.startTiming();
+}
+
+function onRouteChangeComplete(location) {
+  NProgress.done();
+  trackPageView(location);
+  measureTime.endTiming();
+  measureTime.sendTiming(location);
+}
+
+function onRouteChangeError() {
+  NProgress.done();
+}
+
+Router.onRouteChangeStart = onRouteChangeStart;
+Router.onRouteChangeComplete = onRouteChangeComplete;
+Router.onRouteChangeError = onRouteChangeError;
 
 export default function Header({ pathname, title }) {
   return (
