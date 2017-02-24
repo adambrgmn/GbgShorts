@@ -6,16 +6,17 @@ import getPage from '../lib/getPage';
 
 import Header from '../components/Header';
 import Container from '../components/Container';
+import { Content } from '../components/Content';
 import { PinkSmiley } from '../components/Icons';
 
 import { media } from '../style/utils';
 
-const Content = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-`;
+// const Content = styled.div`
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   width: 100%;
+// `;
 
 const Message = styled.div`
   padding: 1rem;
@@ -42,8 +43,8 @@ const Message = styled.div`
 `;
 
 const SmileyContainer = styled.div`
-  width: 10rem;
-  height: 10rem;
+  width: 7rem;
+  height: 7rem;
   margin: 2rem auto;
 `;
 

@@ -6,6 +6,7 @@ import NProgress from 'nprogress';
 
 import { media } from '../../style/utils';
 import Navigation from '../Navigation';
+import Link from '../Link';
 
 const Container = styled.header`
   position: relative;
@@ -30,6 +31,11 @@ const Title = styled.h1`
   text-transform: uppercase;
   letter-spacing: 3px;
   z-index: 2;
+
+  & a {
+    color: currentColor;
+    text-decoration: none;
+  }
 `;
 
 Router.onRouteChangeStart = () => NProgress.start();
@@ -42,7 +48,9 @@ export default function Header({ pathname, title }) {
       <Head>
         <title>{title && `${title} - `}Gbg Shorts | 22 april 2017 hos Hey It&apos;s Enrico Pallazzo</title>
       </Head>
-      <Title>Gbg Shorts</Title>
+      <Title>
+        <Link href="/">Gbg Shorts</Link>
+      </Title>
       <Navigation pathname={pathname} />
     </Container>
   );

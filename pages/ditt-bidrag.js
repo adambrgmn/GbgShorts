@@ -23,7 +23,7 @@ const Title = styled.h1`
 
   ${media.large`
     margin: 1rem 0 0 0;
-    font-size: 4rem;
+    font-size: 5rem;
   `}
 `;
 
@@ -74,7 +74,7 @@ export default class DittBidrag extends Component {
           </Items>
 
           <Items order="1">
-            <Img src="http://res.cloudinary.com/adambrgmn/image/upload/c_lfill,g_face,h_360,w_550/v1485974209/gbgshorts/gbgshorts-2.jpg" />
+            <Img src="http://res.cloudinary.com/adambrgmn/image/upload/c_lfill,g_face,h_360,w_550/v1485974209/gbgshorts/gs_webb_03.png" />
           </Items>
 
           <Items order="2">

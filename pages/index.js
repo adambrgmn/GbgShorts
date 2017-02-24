@@ -20,14 +20,14 @@ export default class Index extends Component {
     return {};
   }
 
-  state = { imgs: [0, 1, null] }
+  state = { imgs: ['gbgshorts-1', 'gs_webb_02', null] }
 
   componentDidMount() {
     this.addImages();
   }
 
-  addImages = () => this.setState(({ imgs }) => ({ imgs: [...imgs, 2, 3, 6, 0, 1, 2, 3, 4, 2] }));
-  cloudinarySrc = n => `http://res.cloudinary.com/adambrgmn/image/upload/c_lfill,g_face,h_360,w_550/v1485974209/gbgshorts/gbgshorts-${n}.jpg`
+  addImages = () => this.setState(({ imgs }) => ({ imgs: [...imgs, '6', 'gsjubileum', 'gbgshorts-2', 'gs_webb_04', 'gbgshorts-3', 'gbgshorts-5'] }));
+  cloudinarySrc = img => `http://res.cloudinary.com/adambrgmn/image/upload/c_lfill,g_face,h_360,w_550/v1485974209/gbgshorts/${img}.png`
 
   render() {
     return (
@@ -38,8 +38,6 @@ export default class Index extends Component {
             <GridColumn key={n == null ? 'text' : n + i}>
               {i === 2
                 ? <WelcomeSection />
-                : i === 4
-                  ? <CheckYear />
                 : <Img src={this.cloudinarySrc(n)} />
               }
             </GridColumn>

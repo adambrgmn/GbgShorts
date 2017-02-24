@@ -13,7 +13,10 @@ const Container = styled.article`
   align-items: center;
   width: 100%;
   min-height: 100vh;
-  background-color: ${({ bg }) => (bg || 'rgb(220, 221, 222)')};
+  padding: 2rem 0;
+  background-color: #d8c0c0;
+
+  &:nth-child(odd) { background-color: #dcddde; }
 
   ${media.large`
     flex-flow: row wrap;
@@ -28,6 +31,13 @@ const GridItem = styled.div`
   ${media.large`
     width: 50%;
     padding: 3rem;
+    padding-left: 4rem;
+    padding-right: 1.5rem;
+
+    &:last-child {
+      padding-left: 1.5rem;
+      padding-right: 4rem;
+    }
   `}
 `;
 
@@ -49,11 +59,18 @@ const Content = styled.div`
   }
 `;
 
+const ImgContainer = styled.div`
+  padding: 0 2rem;
+  ${media.large`
+    padding: 0;
+  `}
+`;
+
 export default function BlogPost({ item }) {
   return (
     <Container bg={item.background}>
       <GridItem>
-        {item.img ? <Img src={item.img} /> : null}
+        {item.img ? <ImgContainer><Img src={item.img} /></ImgContainer> : null}
       </GridItem>
       <GridItem>
         <Title>{item.title}</Title>

@@ -107,6 +107,7 @@ const NavItem = styled(Link)`
   clear: both;
   white-space: nowrap;
   font-size: ${({ open }) => (open ? 0.75 : 0.25)}rem;
+  font-weight: 600;
   line-height: ${({ open }) => (open ? 0.75 : 0.25)}rem;
   text-transform: uppercase;
   text-decoration: ${({ active }) => (active ? 'underline' : 'none')};
@@ -168,7 +169,6 @@ export default class Navigation extends Component {
     const { pathname } = this.props;
 
     const navItems = [
-      { title: 'Start', href: '/' },
       { title: 'Nyheter', href: '/nyheter' },
       { title: 'Ditt bidrag', href: '/ditt-bidrag' },
       { title: 'Information', href: '/information' },
