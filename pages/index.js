@@ -16,7 +16,7 @@ export default class Index extends Component {
   }
 
   static async getInitialProps() {
-    await new Promise(resolve => setTimeout(resolve, 1000));
+    await new Promise(resolve => setTimeout(resolve, 100));
     return {};
   }
 

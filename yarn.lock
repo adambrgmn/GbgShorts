@@ -1081,7 +1081,7 @@ create-hmac@^1.1.0, create-hmac@^1.1.2:
     create-hash "^1.1.0"
     inherits "^2.0.1"
 
-cross-spawn@5.0.1:
+cross-spawn@5.0.1, cross-spawn@^5.0.1:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-5.0.1.tgz#a3bbb302db2297cbea3c04edf36941f4613aa399"
   dependencies:
@@ -1299,6 +1299,12 @@ enhanced-resolve@^3.0.0:
     memory-fs "^0.4.0"
     object-assign "^4.0.1"
     tapable "^0.2.5"
+
+env-cmd@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/env-cmd/-/env-cmd-4.0.0.tgz#58dedbc7f4dd721c2f7d8e8c996701011cdebb15"
+  dependencies:
+    cross-spawn "^5.0.1"
 
 errno@^0.1.3:
   version "0.1.4"

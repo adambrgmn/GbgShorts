@@ -4,10 +4,11 @@
   "description": "Homepage for independent short film festival GBG SHORTS",
   "homepage": "https://gbgshorts.se",
   "scripts": {
-    "dev": "next",
+    "dev": "env-cmd ./.env next",
     "start": "next start",
     "build": "next build",
-    "deploy": "./scripts/deploy.sh"
+    "deploy": "./scripts/deploy.sh",
+    "populate-db": "node scripts/populateDatabase.js"
   },
   "repository": "git@github.com:adambrgmn/gbgshorts.git",
   "author": "Adam Bergman <adam@fransvilhelm.com>",
@@ -22,6 +23,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^7.1.1",
+    "env-cmd": "^4.0.0",
     "eslint": "^3.14.1",
     "eslint-config-airbnb": "^14.0.0",
     "eslint-plugin-import": "^2.2.0",

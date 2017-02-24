@@ -45,6 +45,10 @@ const TextContent = styled.div`
       &:first-child { padding-top: 5rem; }
     `}
   }
+
+  & a {
+    color: currentColor;
+  }
 `;
 
 export default class Information extends Component {
