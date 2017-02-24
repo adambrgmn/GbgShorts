@@ -4,7 +4,7 @@ import Img from '../Img';
 import { breakpoints, baseFontSize } from '../../style/utils';
 
 const cloudinarySrc = (img, width = 500, height = 330) => (
-  `http://res.cloudinary.com/adambrgmn/image/upload/c_lfill,g_face,w_${width},h_${height}/v1485974209/gbgshorts/${img}`
+  `https://res.cloudinary.com/adambrgmn/image/upload/c_lfill,g_face,w_${width},h_${height}/v1485974209/gbgshorts/${img}`
 );
 
 

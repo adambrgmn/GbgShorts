@@ -54,7 +54,7 @@ export default class Information extends Component {
             <LogotypeCurly />
           </Items>
           <Items order="1">
-            <Img src="http://res.cloudinary.com/adambrgmn/image/upload/c_lfill,g_face,h_360,w_550/v1485974209/gbgshorts/infocollage.png" />
+            <Img src="https://res.cloudinary.com/adambrgmn/image/upload/c_lfill,g_face,h_360,w_550/v1485974209/gbgshorts/infocollage.png" />
           </Items>
           <Items order="2">
             <TextContent dangerouslySetInnerHTML={{ __html: data.html }} />

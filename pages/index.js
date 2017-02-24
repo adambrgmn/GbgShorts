@@ -27,7 +27,7 @@ export default class Index extends Component {
   }
 
   addImages = () => this.setState(({ imgs }) => ({ imgs: [...imgs, '6', 'gsjubileum', 'gbgshorts-2', 'gs_webb_04', 'gbgshorts-3', 'gbgshorts-5'] }));
-  cloudinarySrc = img => `http://res.cloudinary.com/adambrgmn/image/upload/c_lfill,g_face,h_360,w_550/v1485974209/gbgshorts/${img}.png`
+  cloudinarySrc = img => `https://res.cloudinary.com/adambrgmn/image/upload/c_lfill,g_face,h_360,w_550/v1485974209/gbgshorts/${img}.png`
 
   render() {
     return (
