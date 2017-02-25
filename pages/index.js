@@ -4,8 +4,8 @@ import Container from '../components/Container';
 import Header from '../components/Header';
 import { Grid, GridColumn } from '../components/Grid';
 import WelcomeSection from '../components/WelcomeSection';
-import { CheckYear } from '../components/Icons';
 import Img from '../components/Img';
+import { trackPageView } from '../lib/ga';
 
 
 export default class Index extends Component {
@@ -23,6 +23,7 @@ export default class Index extends Component {
   state = { imgs: ['gbgshorts-1', 'gs_webb_02', null] }
 
   componentDidMount() {
+    trackPageView(this.props.url.pathname);
     this.addImages();
   }
 

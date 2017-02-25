@@ -9,6 +9,7 @@ import { Content, Items } from '../components/Content';
 import { LogotypeCurly } from '../components/Icons';
 import Img from '../components/Img';
 import { media } from '../style/utils';
+import { trackPageView } from '../lib/ga';
 
 const TextContent = styled.div`
   & p {
@@ -42,6 +43,10 @@ export default class Information extends Component {
   static async getInitialProps() {
     const data = await getPage('information');
     return { data };
+  }
+
+  componentDidMount() {
+    trackPageView(this.props.url.pathname);
   }
 
   render() {

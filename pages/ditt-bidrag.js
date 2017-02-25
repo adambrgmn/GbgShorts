@@ -10,6 +10,7 @@ import Img from '../components/Img';
 import { Content, Items } from '../components/Content';
 import { BottomBorder } from '../components/Typography';
 import { media } from '../style/utils';
+import { trackPageView } from '../lib/ga';
 
 const Title = styled.h1`
   position: relative;
@@ -59,6 +60,10 @@ export default class DittBidrag extends Component {
   static async getInitialProps() {
     const data = await getPage('ditt-bidrag');
     return { data };
+  }
+
+  componentDidMount() {
+    trackPageView(this.props.url.pathname);
   }
 
   render() {

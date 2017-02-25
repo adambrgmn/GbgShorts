@@ -10,13 +10,7 @@ import { Content } from '../components/Content';
 import { PinkSmiley } from '../components/Icons';
 
 import { media } from '../style/utils';
-
-// const Content = styled.div`
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   width: 100%;
-// `;
+import { trackPageView } from '../lib/ga';
 
 const Message = styled.div`
   padding: 1rem;
@@ -61,6 +55,10 @@ export default class Biljetter extends Component {
   static async getInitialProps() {
     const data = await getPage('biljetter');
     return { data };
+  }
+
+  componentDidMount() {
+    trackPageView(this.props.url.pathname);
   }
 
   render() {

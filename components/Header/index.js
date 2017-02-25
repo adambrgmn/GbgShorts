@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Head from 'next/head';
 import Router from 'next/router';
 import NProgress from 'nprogress';
-import { trackPageView, trackError, GaTiming } from '../../lib/ga';
+import { GaTiming } from '../../lib/ga';
 
 import { media } from '../../style/utils';
 import Navigation from '../Navigation';
@@ -39,10 +39,6 @@ const Title = styled.h1`
   }
 `;
 
-
-// trackError
-// GaTiming
-
 const measureTime = new GaTiming({ category: 'Page transitions', variable: 'load' });
 
 function onRouteChangeStart() {
@@ -52,7 +48,6 @@ function onRouteChangeStart() {
 
 function onRouteChangeComplete(location) {
   NProgress.done();
-  trackPageView(location);
   measureTime.endTiming();
   measureTime.sendTiming(location);
 }

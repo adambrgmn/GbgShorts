@@ -5,6 +5,7 @@ import getNews from '../lib/getNews';
 import Header from '../components/Header';
 import Container from '../components/Container';
 import BlogPost from '../components/BlogPost';
+import { trackPageView } from '../lib/ga';
 
 export default class Nyheter extends Component {
   static propTypes = {
@@ -17,6 +18,10 @@ export default class Nyheter extends Component {
   static async getInitialProps() {
     const data = await getNews();
     return { data };
+  }
+
+  componentDidMount() {
+    trackPageView(this.props.url.pathname);
   }
 
   render() {
