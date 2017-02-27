@@ -79,7 +79,7 @@ export default class DittBidrag extends Component {
           </Items>
 
           <Items order="1">
-            <Img src="https://res.cloudinary.com/adambrgmn/image/upload/c_lfill,g_face,h_360,w_550/v1485974209/gbgshorts/gs_webb_03.png" />
+            <Img src="https://res.cloudinary.com/adambrgmn/image/upload/c_lfill,g_face,h_720,w_1100/v1485974209/gbgshorts/gs_webb_03.png" />
           </Items>
 
           <Items order="2">
