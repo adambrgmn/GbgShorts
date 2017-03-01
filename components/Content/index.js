@@ -11,7 +11,7 @@ export const Content = styled.div`
   padding: 4rem 1rem;
 
   ${media.large`
-    width: 90%;
+    width: 100%;
     padding: 4rem 2rem;
   `}
 `;

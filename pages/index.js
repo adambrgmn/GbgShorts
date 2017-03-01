@@ -4,7 +4,7 @@ import Container from '../components/Container';
 import Header from '../components/Header';
 import { Grid, GridColumn } from '../components/Grid';
 import WelcomeSection from '../components/WelcomeSection';
-import Img from '../components/Img';
+import CloudinaryImg from '../components/CloudinaryImg';
 import { trackPageView } from '../lib/ga';
 
 
@@ -20,14 +20,14 @@ export default class Index extends Component {
     return {};
   }
 
-  state = { imgs: ['gbgshorts-1.jpg', '59.jpg', null] }
+  state = { imgs: ['gbgshorts-1', '59', null] }
 
   componentDidMount() {
     trackPageView(this.props.url.pathname);
     this.addImages();
   }
 
-  addImages = () => this.setState(({ imgs }) => ({ imgs: [...imgs, '6.jpg', '6-streck.png', 'gbgshorts-2.jpg', 'gs_webb_04.jpg', 'gbgshorts-3.jpg', 'gbgshorts-5.jpg'] }));
+  addImages = () => this.setState(({ imgs }) => ({ imgs: [...imgs, '6', 'sex-streck', 'gbgshorts-2', 'gs_webb_04', 'gbgshorts-3', 'gbgshorts-5'] }));
   cloudinarySrc = img => `https://res.cloudinary.com/adambrgmn/image/upload/c_lfill,g_face,h_720,w_1100/v1485974209/gbgshorts/${img}`
 
   render() {
@@ -39,7 +39,7 @@ export default class Index extends Component {
             <GridColumn key={n == null ? 'text' : n + i}>
               {i === 2
                 ? <WelcomeSection />
-                : <Img src={this.cloudinarySrc(n)} />
+                : <CloudinaryImg img={n} ext="jpg" transformations="" />
               }
             </GridColumn>
           ))}

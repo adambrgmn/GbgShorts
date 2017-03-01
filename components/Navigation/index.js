@@ -110,7 +110,7 @@ const NavItem = styled(Link)`
   font-weight: 600;
   line-height: ${({ open }) => (open ? 0.75 : 0.25)}rem;
   text-transform: uppercase;
-  text-decoration: ${({ active }) => (active ? 'underline' : 'none')};
+  text-decoration: ${({ active }) => (active ? 'line-through' : 'none')};
   letter-spacing: ${({ open }) => (open ? 2 : 0)}px;
   color: ${({ open }) => (open ? '#000000' : 'transparent')};
   opacity: ${({ index, open }) => (index < 3 || open ? 1 : 0)};
@@ -118,7 +118,7 @@ const NavItem = styled(Link)`
   transition: all ${() => transitionDur}s ease-in-out;
   transition-delay: ${({ index }) => (index + 1) * transitionDelay}s;
 
-  &:hover { text-decoration: underline; }
+  &:hover { text-decoration: line-through; }
 
   &:first-child { margin-top: 0; }
 

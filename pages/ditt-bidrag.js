@@ -6,7 +6,7 @@ import getPage from '../lib/getPage';
 
 import Header from '../components/Header';
 import Container from '../components/Container';
-import Img from '../components/Img';
+import CloudinaryImg from '../components/CloudinaryImg';
 import { Content, Items } from '../components/Content';
 import { BottomBorder } from '../components/Typography';
 import { media } from '../style/utils';
@@ -38,13 +38,16 @@ const TextContent = styled.div`
 
     ${media.large`
       padding: 0;
-      &:first-child { padding-top: 5rem; }
+      &:first-child { padding-top: 8rem; }
     `}
   }
 
   & a {
     color: currentColor;
+    text-decoration: none;
   }
+
+  & a:hover { text-decoration: line-through; }
 `;
 
 export default class DittBidrag extends Component {
@@ -79,7 +82,7 @@ export default class DittBidrag extends Component {
           </Items>
 
           <Items order="1">
-            <Img src="https://res.cloudinary.com/adambrgmn/image/upload/c_lfill,g_face,h_720,w_1100/v1485974209/gbgshorts/gs_webb_03.png" />
+            <CloudinaryImg img="gs_webb_03" />
           </Items>
 
           <Items order="2">

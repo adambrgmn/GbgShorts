@@ -46,11 +46,17 @@ const data = [
     published: false,
   },
   {
-    html: '<p>Tbh pinterest umami keffiyeh fanny pack. Kickstarter microdosing small batch, authentic actually ramps kitsch vice. Sapiente slow-carb hexagon anim blog tacos, qui labore in. Tumeric swag ullamco, kogi selvage VHS snackwave meggings pitchfork velit af cliche shoreditch. Prism 90\'s trust fund, sed fanny pack umami glossier microdosing. Meggings cred pickled, seitan hexagon chartreuse authentic woke adipisicing poutine succulents messenger bag.</p><p>Stumptown leggings jean shorts coloring book craft beer, photo booth lyft migas. Meditation blue bottle umami vexillologist, crucifix roof party lyft thundercats af quis ex austin. Austin shabby chic labore thundercats. Wolf roof party wayfarers street art, anim sustainable locavore williamsburg sed est tacos mixtape. Tbh next level quinoa tumeric. Coloring book iPhone laborum messenger bag minim. Skateboard esse green juice, nesciunt 90\'s bicycle rights williamsburg fashion axe.</p><p>Eu hashtag fingerstache bushwick, deep v selfies bitters ennui next level aliquip try-hard hot chicken hammock minim. Ramps sapiente seitan shabby chic +1, distillery pok pok woke copper mug meditation keytar gluten-free. Yr letterpress occupy sed laborum, assumenda cold-pressed organic pok pok vexillologist PBR&B mixtape venmo meggings.</p>',
-    img: 'https://res.cloudinary.com/adambrgmn/image/upload/c_lfill,w_550/v1485974209/gbgshorts/gbgshorts-2017.png',
+    html: '<p>Det är lika nervöst varje år. Festivalen står ju lite och faller på att publiken (du!) skickar in filmer så att vi har något att visa. Annars står vi där med vårt husband, vårt dessertvin och våra rödgråtna ögon. Det har gått alldeles utmärkt alla andra år, så vi litar på att det löser sig den här gången också. I år firar vi dessutom sexårsjubileum. Man vet aldrig vilket år som är det sista, så det gäller att fira stort varje år.</p><p>Gör en film helt ensam eller dra ihop ett gäng och gör det tillsammans. Filma med en proffsig systemkamera eller med mobilen. Så ses vi den 22 april!</p>',
+    img: 'https://res.cloudinary.com/adambrgmn/image/upload/c_lfill,w_1100/v1485974209/gbgshorts/34.png',
+    time: Date.now() - 10000,
+    title: 'Det blir ett år i år också',
+    published: true,
+  },
+  {
+    html: '<p><strong>Hur deltar jag?</strong><br />Du deltar genom att göra en kortfilm som du skickar till <a href="mailto:gbgshorts@gmail.com">gbgshorts@gmail.com</a> (gärna via Dropbox eller liknande).</p><p><strong>Vad krävs för att min film ska accepteras?</strong><br />Din film ska vara högst 5 minuter lång och gjord exklusivt för Gbg Shorts. Filmen måste innehålla dialog och vara gjord helt utan finansiering.</p><p><strong>Får man komma utan att ha gjort film?</strong><br />Kanske. Men det är roligare om man har gjort film. Dessutom är man garanterad en biljett då. Övriga får komma i mån av plats. Man kan förköpa biljetter genom att maila till <a href="mailto:gbgshorts@gmail.com">gbgshorts@gmail.com</a>. Det är först till kvarn som gäller. Blir det biljetter över kommer man även kunna köpa i dörren.</p><p><strong>Vad kostar biljetten?</strong><br />Den kostar 100 kr för alla inklusive filmskaparna.</p><p><strong>Var och när?</strong><br />Vi håller till i garaget hos Hey, it’s Enrico Pallazzo. Du hoppar av vid Vagnhallen Majorna och går ner mot Röda Sten. Dörrarna öppnas 19.00. Filmvisningarna börjar 20.30. När filmerna börjar stängs dörrarna, så kom i tid!</p>',
+    img: 'https://res.cloudinary.com/adambrgmn/image/upload/c_lfill,w_1100/v1485974209/gbgshorts/gbgshorts-2017.png',
     time: Date.now(),
-    title: 'Hur lång måste en bloggrubrik vara',
-    background: '#d8c0c0',
+    title: 'Allt du skulle vilja veta om Gbg Shorts, men varit för rädd för att fråga om',
     published: true,
   },
 ];

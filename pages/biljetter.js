@@ -28,11 +28,11 @@ const Message = styled.div`
     text-decoration: none;
   }
 
-  & a:hover { text-decoration: underline; }
+  & a:hover { text-decoration: line-through; }
 
   ${media.medium`
-    padding: 2rem 3rem;
-    font-size: 2rem;
+    padding: 2rem 2rem;
+    font-size: 2.1rem;
   `}
 `;
 

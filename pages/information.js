@@ -27,7 +27,14 @@ const TextContent = styled.div`
 
   & a {
     color: currentColor;
+    text-decoration: none;
   }
+
+  & a:hover { text-decoration: line-through; }
+`;
+
+const Logotype = styled(LogotypeCurly)`
+  margin-top: 3rem;
 `;
 
 export default class Information extends Component {
@@ -55,8 +62,8 @@ export default class Information extends Component {
       <Container bg="#dcddde">
         <Header pathname={url.pathname} title="Information" />
         <Content>
-          <Items order="3" basis="60">
-            <LogotypeCurly />
+          <Items order="3" basis="50">
+            <Logotype />
           </Items>
           <Items order="1">
             <Img src="https://res.cloudinary.com/adambrgmn/image/upload/c_lfill,w_1100/v1485974209/gbgshorts/infocollage.png" />

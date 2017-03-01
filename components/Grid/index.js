@@ -18,8 +18,16 @@ export const GridColumn = styled.div`
 
   ${media.small`
     flex-basis: calc(100% / 2);
+
+    &:last-child:nth-child(odd) {
+      display: none;
+    }
   `}
+
   ${media.large`
     flex-basis: calc(100% / 3);
+    &:last-child:nth-child(odd) {
+      display: block;
+    }
   `}
 `;
