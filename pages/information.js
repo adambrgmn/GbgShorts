@@ -30,7 +30,7 @@ const TextContent = styled.div`
     text-decoration: none;
   }
 
-  & a:hover { text-decoration: line-through; }
+  & a:hover { text-decoration: underline; }
 `;
 
 const Logotype = styled(LogotypeCurly)`
@@ -62,11 +62,11 @@ export default class Information extends Component {
       <Container bg="#dcddde">
         <Header pathname={url.pathname} title="Information" />
         <Content>
-          <Items order="3" basis="50">
+          <Items order="3" basis="60">
             <Logotype />
           </Items>
           <Items order="1">
-            <Img src="https://res.cloudinary.com/adambrgmn/image/upload/c_lfill,w_1100/v1485974209/gbgshorts/infocollage.png" />
+            <Img src="https://res.cloudinary.com/adambrgmn/image/upload/c_lfill,w_1100/v1485974209/gbgshorts/infocollage2.png" />
           </Items>
           <Items order="2">
             <TextContent dangerouslySetInnerHTML={{ __html: data.html }} />

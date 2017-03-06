@@ -28,7 +28,7 @@ const Message = styled.div`
     text-decoration: none;
   }
 
-  & a:hover { text-decoration: line-through; }
+  & a:hover { text-decoration: underline; }
 
   ${media.medium`
     padding: 2rem 2rem;

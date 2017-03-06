@@ -15,12 +15,13 @@ import { trackPageView } from '../lib/ga';
 const Title = styled.h1`
   position: relative;
   display: block;
-  font-size: 2.5rem;
+  font-size: 2.7rem;
   font-family: 'HelveticaNeue-CondensedBold', 'HelveticaNeueBoldCondensed', 'HelveticaNeue-Bold-Condensed', 'Helvetica Neue Bold Condensed', 'HelveticaNeueBold', 'HelveticaNeue-Bold', 'Helvetica Neue Bold', 'HelveticaNeue', 'Helvetica Neue', 'TeXGyreHerosCnBold', 'Helvetica', 'Tahoma', 'Geneva', 'Arial Narrow', 'Arial', sans-serif;
   font-weight: 600;
   font-stretch: condensed;
   text-align: center;
   text-transform: uppercase;
+  letter-spacing: 0.04em;
 
   ${media.large`
     margin: 1rem 0 0 0;
@@ -38,7 +39,7 @@ const TextContent = styled.div`
 
     ${media.large`
       padding: 0;
-      &:first-child { padding-top: 8rem; }
+      &:first-child { padding-top: 7rem; }
     `}
   }
 
@@ -47,7 +48,7 @@ const TextContent = styled.div`
     text-decoration: none;
   }
 
-  & a:hover { text-decoration: line-through; }
+  & a:hover { text-decoration: underline; }
 `;
 
 export default class DittBidrag extends Component {

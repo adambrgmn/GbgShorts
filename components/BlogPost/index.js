@@ -56,6 +56,11 @@ const Content = styled.div`
 
   & a {
     color: currentColor;
+    text-decoration: none;
+  }
+
+  & a:hover {
+    text-decoration: underline;
   }
 `;
 

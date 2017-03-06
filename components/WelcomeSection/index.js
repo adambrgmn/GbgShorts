@@ -26,7 +26,7 @@ const WelcomeText = styled.h2`
   color: #ffffff;
 
   ${media.small`font-size: 1.5rem;`}
-  ${media.medium`font-size: 2rem;`}
+  ${media.medium`font-size: 2.5rem;`}
 `;
 
 const UC = styled.span`text-transform: uppercase;`;
