@@ -29,6 +29,7 @@ export default class MyDocument extends Document {
     return (
       <html lang="sv-SE">
         <Head>
+          <meta charSet="utf-8" />
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
           <title>Gbg Shorts | 22 april 2017 hos Hey It&apos;s Enrico Pallazzo</title>
 
