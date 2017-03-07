@@ -21,11 +21,11 @@ const Title = styled.h1`
   font-stretch: condensed;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.03em;
 
   ${media.large`
     margin: 1rem 0 0 0;
-    font-size: 5rem;
+    font-size: 6rem;
   `}
 `;
 

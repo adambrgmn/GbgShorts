@@ -66,7 +66,7 @@ export default class Information extends Component {
       <Container bg="#dcddde">
         <Header pathname={url.pathname} title="Information" />
         <Content>
-          <Items order="3" basis="60">
+          <Items order="3" basis="70">
             <Logotype />
           </Items>
           <Items order="1">
