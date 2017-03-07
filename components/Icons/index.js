@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { breakpoints } from '../../style/utils';
 
 export function LogotypeCurly({ className }) {
-  if (!window) return null;
+  if (typeof window === 'undefined') return null;
 
   if (window.innerWidth < breakpoints.medium) {
     return (

@@ -20,7 +20,7 @@ const data = [
     imgs: [],
     time: new Date('2015-11-26T19:00:00.000Z').getTime(),
     title: 'Ett år till av glädje och hemmagjord kortfilm',
-    img: 'https://res.cloudinary.com/adambrgmn/image/upload/c_lfill,w_550/v1485974209/gbgshorts/5.png',
+    img: 'https://res.cloudinary.com/adambrgmn/image/upload/c_lfill,w_1100/v1485974209/gbgshorts/60_qkbhhv.png',
     published: false,
   },
   {
@@ -28,7 +28,7 @@ const data = [
     time: new Date('2016-02-05T09:06:40.000Z').getTime(),
     title: 'Hurra för fem goda år',
     video: 149551743,
-    img: 'https://res.cloudinary.com/adambrgmn/image/upload/c_lfill,w_550/v1485974209/gbgshorts/gbgshorts-1.png',
+    img: 'https://res.cloudinary.com/adambrgmn/image/upload/c_lfill,w_1100/v1485974209/gbgshorts/gbgshorts-2017_strcjz.png',
     published: false,
   },
   {

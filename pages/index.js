@@ -20,15 +20,14 @@ export default class Index extends Component {
     return {};
   }
 
-  state = { imgs: ['gbgshorts-1', '59', null] }
+  state = { imgs: ['gbgshorts-1', 'johan-stahre', null] }
 
   componentDidMount() {
     trackPageView(this.props.url.pathname);
     this.addImages();
   }
 
-  addImages = () => this.setState(({ imgs }) => ({ imgs: [...imgs, '6', 'sex-streck', 'gbgshorts-2', 'gs_webb_04', 'gbgshorts-3', 'gbgshorts-5'] }));
-  cloudinarySrc = img => `https://res.cloudinary.com/adambrgmn/image/upload/c_lfill,g_face,h_720,w_1100/v1485974209/gbgshorts/${img}`
+  addImages = () => this.setState(({ imgs }) => ({ imgs: [...imgs, '6', 'sex-streck', 'gbgshorts-2', 'gbgshorts-3', '2_o7xa0v', 'gbgshorts-5'] }));
 
   render() {
     return (

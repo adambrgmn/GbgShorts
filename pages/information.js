@@ -34,7 +34,11 @@ const TextContent = styled.div`
 `;
 
 const Logotype = styled(LogotypeCurly)`
-  margin-top: 3rem;
+  margin-top: 0rem;
+
+  ${media.large`
+    margin-top: 3rem;
+  `}
 `;
 
 export default class Information extends Component {
