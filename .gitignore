@@ -1,8 +1,9 @@
 .next
+.env
 
 # Logs
 logs
-*.log 
+*.log
 npm-debug.log*
 
 # Runtime data
