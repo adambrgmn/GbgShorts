@@ -145,7 +145,7 @@ const NavItem = styled(Link)`
     clear: none;
     font-size: inherit;
     line-height: inherit;
-    letter-spacing: 1px;
+    letter-spacing: 0.15em;
     opacity: 1;
     visibility: visible;
     color: #000000;

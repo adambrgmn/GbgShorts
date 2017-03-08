@@ -35,6 +35,15 @@ const TextContent = styled.div`
 
 const Logotype = styled(LogotypeCurly)`
   margin-top: 0rem;
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+
+  ${media.medium`
+    display: block;
+    visibility: visible;
+    opacity: 1;
+  `}
 
   ${media.large`
     margin-top: 3rem;

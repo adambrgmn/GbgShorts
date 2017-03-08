@@ -7,15 +7,6 @@ import { media } from '../../style/utils';
 const Svg = styled.svg`
   width: 100%;
   height: auto;
-  display: none;
-  visibility: hidden;
-  opacity: 0;
-
-  ${media.medium`
-    display: block;
-    visibility: visible;
-    opacity: 1;
-  `}
 `;
 
 export function LogotypeCurly({ className }) {

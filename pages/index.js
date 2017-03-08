@@ -27,7 +27,7 @@ export default class Index extends Component {
     this.addImages();
   }
 
-  addImages = () => this.setState(({ imgs }) => ({ imgs: [...imgs, '6', 'sex-streck', 'gbgshorts-2', 'gbgshorts-3', '2_o7xa0v', 'gbgshorts-5'] }));
+  addImages = () => this.setState(({ imgs }) => ({ imgs: [...imgs, '6', 'sex-streck-2', 'gbgshorts-2', 'gbgshorts-3', '2_o7xa0v', 'gbgshorts-5'] }));
 
   render() {
     return (

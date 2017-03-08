@@ -30,7 +30,7 @@ const Title = styled.h1`
   font-size: 1.75rem;
   line-height: 1.75rem;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 0.2em;
   z-index: 2;
 
   & a {

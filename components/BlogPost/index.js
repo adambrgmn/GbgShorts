@@ -44,6 +44,7 @@ const GridItem = styled.div`
 const Title = styled.h1`
   margin-bottom: 0.5em;
   font-size: 2.2rem;
+  letter-spacing: 0.03em;
   font-weight: 600;
 `;
 

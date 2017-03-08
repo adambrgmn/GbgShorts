@@ -76,7 +76,7 @@ export default class DittBidrag extends Component {
       <Container bg="rgb(136, 122, 143)">
         <Header pathname={url.pathname} title="Ditt bidrag" />
         <Content>
-          <Items order="3">
+          <Items order="3" basis="70">
             <Title>
               <BottomBorder>Ditt bidrag</BottomBorder>
             </Title>
