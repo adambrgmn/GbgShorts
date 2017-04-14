@@ -1,6 +1,6 @@
 {
   "name": "gbgshorts",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Homepage for independent short film festival GBG SHORTS",
   "homepage": "https://gbgshorts.se",
   "scripts": {
@@ -20,6 +20,7 @@
     "ramda": "^0.23.0",
     "react": "^15.4.2",
     "react-ga": "^2.1.2",
+    "react-vimeo": "^1.0.0",
     "styled-components": "^1.4.2"
   },
   "devDependencies": {

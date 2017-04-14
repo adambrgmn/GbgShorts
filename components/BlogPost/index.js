@@ -1,6 +1,7 @@
 /* eslint-disable react/no-danger */
 import React, { PropTypes } from 'react';
 import styled from 'styled-components';
+import Vimeo from 'react-vimeo';
 
 import { media } from '../../style/utils';
 
@@ -67,16 +68,28 @@ const Content = styled.div`
 
 const ImgContainer = styled.div`
   padding: 0 2rem;
+  text-align: center;
+
   ${media.large`
     padding: 0;
   `}
+
+  & iframe {
+    width: 100%;
+    min-height: 300px;
+  }
 `;
 
 export default function BlogPost({ item }) {
   return (
     <Container bg={item.background}>
       <GridItem>
-        {item.img ? <ImgContainer><Img src={item.img} /></ImgContainer> : null}
+        <ImgContainer>
+          {item.video ?
+            <Vimeo videoId={item.video} autoplay /> :
+            <Img src={item.img} />
+          }
+        </ImgContainer>
       </GridItem>
       <GridItem>
         <Title>{item.title}</Title>
