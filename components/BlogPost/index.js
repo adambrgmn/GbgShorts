@@ -74,9 +74,13 @@ const ImgContainer = styled.div`
     padding: 0;
   `}
 
+  & .vimeo {
+    margin-left: -2rem;
+  }
+
   & iframe {
-    width: 100%;
-    min-height: 300px;
+    width: 300px;
+    height: 300px;
   }
 `;
 
