@@ -79,9 +79,16 @@ const ImgContainer = styled.div`
   }
 
   & iframe {
-    width: 300px;
-    height: 300px;
+    width: 270px;
+    height: 270px;
   }
+
+  ${media.medium`
+    & iframe {
+      width: 450px;
+      height: 450px;
+    }
+  `}
 `;
 
 export default function BlogPost({ item }) {
