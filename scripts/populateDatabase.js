@@ -53,18 +53,18 @@ const data = [
     published: true,
   },
   {
-    html: '<p><em>Hur deltar jag?</em><br />Du deltar genom att göra en kortfilm som du skickar till <a href="mailto:gbgshorts@gmail.com">gbgshorts@gmail.com</a> (gärna via Dropbox eller liknande).</p><p><em>Vad krävs för att min film ska accepteras?</em><br />Din film ska vara högst 5 minuter lång och gjord exklusivt för Gbg Shorts. Filmen måste innehålla dialog och vara gjord helt utan finansiering.</p><p><em>Får man komma utan att ha gjort film?</em><br />Så klart! Men det är roligare om man har gjort film. Dessutom är man garanterad en biljett då. Övriga får komma i mån av plats. Man kan förköpa biljetter genom att maila till <a href="mailto:gbgshorts@gmail.com">gbgshorts@gmail.com</a>. Det är först till kvarn som gäller. Blir det biljetter över kommer man även kunna köpa i dörren.</p><p><em>Vad kostar biljetten?</em><br />Den kostar 100 kr för alla inklusive filmskaparna.</p><p><em>Var och när?</em><br />Vi håller till i garaget hos Hey, it’s Enrico Pallazzo. Du hoppar av vid Vagnhallen Majorna och går ner mot Röda Sten. Dörrarna öppnas 19.00. Filmvisningarna börjar 20.30. När filmerna börjar stängs dörrarna, så kom i tid!</p>',
-    img: 'https://res.cloudinary.com/adambrgmn/image/upload/c_lfill,w_1100/v1485974209/gbgshorts/gbgshorts-2017.png',
-    time: 1488981398234,
-    title: 'Bra att veta inför 22 april',
-    published: true,
-  },
-  {
     html: '<p>På allmän begäran flyttar vi fram sista inlämningsdag för bidrag till Gbg Shorts 2017. Senast onsdag 19 april kl 18.00 vill vi ha din film. Gott om tid med andra ord!</p><p>En annan sak också. Alla som vill komma på festivalen måste skriva upp sig på vår lista. Du hittar den på adressen <a href="https://thelist.gbgshorts.se">thelist.gbgshorts.se</a>. Sprid gärna detta till alla som du tror är intresserade av att komma. Betalar gör du i dörren lördag den 22 april. Det kostar 100 kronor för alla, inkl filmskapare, och det är cash och swish som gäller. Dörrarna öppnar kl 19.00 och det kan vara bra att vara i tid om man vill vara säker på att få plats. Det finns soppa, öl och vin att köpa i baren.</p><p>Ses snart! /A.F.C.A</p>',
     img: 'http://res.cloudinary.com/adambrgmn/image/upload/c_lfill,w_1100/v1488880742/gbgshorts/27_lj5ijj.jpg',
     video: 212476248,
-    time: 1492197333872,
+    time: 1488981388234,
     title: 'Bra att veta inför 22 april – del två',
+    published: true,
+  },
+  {
+    html: '<p><em>Hur deltar jag?</em><br />Du deltar genom att göra en kortfilm som du skickar till <a href="mailto:gbgshorts@gmail.com">gbgshorts@gmail.com</a> (gärna via Dropbox eller liknande).</p><p><em>Vad krävs för att min film ska accepteras?</em><br />Din film ska vara högst 5 minuter lång och gjord exklusivt för Gbg Shorts. Filmen måste innehålla dialog och vara gjord helt utan finansiering.</p><p><em>Får man komma utan att ha gjort film?</em><br />Så klart! Men det är roligare om man har gjort film. Dessutom är man garanterad en biljett då. Alla som vill komma på festivalen måste skriva upp sig på vår lista. Du hittar den på adressen <a href="https://thelist.gbgshorts.se">thelist.gbgshorts.se</a>. Betalar gör du i dörren lördag 22 april. Kom i tid om du vill vara säker på att få plats.</p><p><em>Vad kostar biljetten?</em><br />Den kostar 100 kr för alla inklusive filmskaparna.</p><p><em>Var och när?</em><br />Vi håller till i garaget hos Hey, it’s Enrico Pallazzo. Du hoppar av vid Vagnhallen Majorna och går ner mot Röda Sten. Dörrarna öppnas 19.00. Filmvisningarna börjar 20.30. När filmerna börjar stängs dörrarna, så kom i tid!</p>',
+    img: 'https://res.cloudinary.com/adambrgmn/image/upload/c_lfill,w_1100/v1485974209/gbgshorts/gbgshorts-2017.png',
+    time: 1488981398234,
+    title: 'Bra att veta inför 22 april',
     published: true,
   },
 ];
